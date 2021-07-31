@@ -5,17 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <img src="./assets/logo.png" alt="Mariana Palhano">
-        <a href="#">Sobre mim</a>
-        <a href="#">Serviços</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Currículo</a>
-        <a href="#">Contato</a>
-    </nav>
+
     <header>
         <div class="container">
             <h2>Hello,</h2>
@@ -24,5 +18,51 @@
             <button>Entre em contato</button>
         </div>
     </header>
+    <nav>
+        <img src="./assets/logo.png" alt="Mariana Palhano">
+        <a href="#">Sobre mim</a>
+        <a href="#">Serviços</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Currículo</a>
+        <a href="#">Contato</a>
+    </nav>
+    <section id="sobremim">
+        <div class="container">
+            <h1>Sobre mim</h1>
+            <p>Meu nome é Mariana Palhano, mas pode me chamar de Mari. Sou formada em Ciências da Computação pela 
+                Universidade Federal do Ceará e em Letras Inglês pela Universidade Estadual do Ceará. Fui Web Designer,
+                depois me tornei professora de inglês, o que me levou a aprimorar bastante minhas <em>soft-skills</em>. 
+                Estou em constante desenvolvimento das minhas habilidades técnicas, que abrangem desde HTML e CSS, até 
+                JavaScript, Vue e React.
+            </p>
+            <p>No meu tempo livre gosto de estar com o meu marido e meus cachorros, ler e jogar RPG com meus amigos.
+                Adoro aprender coisas novas, sou muito curiosa e determinada diante de desafios.
+            </p>
+        </div>
+        <img src="assets/sobremim.jpg" alt="">
+    </section>
+    <section id="servicos">
+        <h1>Serviços</h1>
+        <div class="servicos-container">
+            <div class="servico">
+                <i data-feather="code"></i>
+                <h2>Desenvolvimento de Websites</h2>
+                <p>Texto</p>
+            </div>
+            <div class="servico">
+                <i data-feather="terminal"></i>
+                <h2>Desenvolvimento de Aplicações Web</h2>
+                <p>Texto</p>
+            </div>
+            <div class="servico">
+                <i data-feather="layout"></i>
+                <h2>Criação de Layouts</h2>
+                <p>Texto</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        feather.replace()
+      </script>
 </body>
 </html>

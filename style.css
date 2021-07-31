@@ -2,8 +2,9 @@
 
 :root {
     --fuchsia: #DF0E73;
+    --light-fuchsia: #FFE4F1;
     --violet: #6E13E6;
-    --aqua: #B4FEE7;
+    --light-violet: #EFE2FF;
     --purple: #603F8B;
     --dark-purple: #3F1D50;
 }
@@ -19,10 +20,11 @@ html, body {
 
 body, button, input, select, textarea {
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 56px;
     color: var(--violet);
 }
 
@@ -37,38 +39,96 @@ button {
     padding: 8px 36px;
     color: white;
     font-size: 24px;
-    min-width: 300px;
+    min-width: 320px;
 }
 
 nav {
     color: var(--fuchsia);
-    padding: 20px 100px;
-    height: 105px;
+    background-color: white;
+    padding: 24px 104px;
+    height: 104px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 24px;
     position: sticky;
+    top: 0;
 }
 
 a {
     color: var(--fuchsia);
     text-decoration: none;
-    margin: 0 30px;
+    margin: 0 32px;
+    padding: 16px;
+}
+
+a:hover {
+    background-color: var(--fuchsia);
+    color: white;
 }
 
 header {
     display: flex;
     align-items: center;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 104px);
 }
 
-header .container {
-    width: 50%;
+button:hover {
+    opacity: 80%;
+}
+
+.container {
+    width: 60%;
     height: fit-content;
-    padding: 0 100px;
+    padding: 0 104px;
 }
 
 .container button {
     background-color: var(--fuchsia);
+}
+
+#sobremim img {
+    height: 350px;
+    width: 250px;
+}
+
+#sobremim {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 104px);
+    background-color: var(--light-fuchsia);
+}
+
+#servicos {
+    height: calc(100vh - 104px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos-container {
+    display: flex;
+
+}
+
+.servico {
+    width: 32%;
+    text-align: center;
+    margin: 0 32px;
+    padding: 24px;
+    border: 1px solid var(--violet);
+    border-radius: 1.5rem;
+}
+
+.servico h2, svg {
+    color: var(--fuchsia);
+}
+
+.servico svg {
+    width: 56px;
+    height: 56px;
+    background-color: var(--light-fuchsia);
+    border-radius: 50%;
+    border: 8px solid var(--light-fuchsia);
 }
