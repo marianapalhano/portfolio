@@ -89,17 +89,12 @@ a:hover {
 .container {
     width: 64%;
     height: fit-content;
-    padding: 0 104px;
+    padding: 0 0 0 104px;
 }
 
 .container button {
     background-color: var(--fuchsia);
     margin-top: 32px;
-}
-
-#sobremim img {
-    height: 350px;
-    width: 250px;
 }
 
 #sobremim {
@@ -109,6 +104,18 @@ a:hover {
     min-height: fit-content;
     padding-bottom: 80px;
     background-color: var(--light-fuchsia);
+}
+
+#sobremim .img-container {
+    display: inline;
+    width: 30%;
+}
+
+#sobremim .img-container img {
+    display: block;
+    margin: 0 auto;
+    height: 70%;
+    width: 70%;
 }
 
 #servicos {
@@ -201,6 +208,10 @@ a:hover {
 @media (max-width: 480px) {
     nav {
         padding: 0 16px;
+        position: fixed;
+        width: 100%;
+        top: unset;
+        bottom: 0;
     }
 
     nav svg {
