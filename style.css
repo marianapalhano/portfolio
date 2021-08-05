@@ -49,11 +49,14 @@ button:hover {
 header {
     display: flex;
     align-items: center;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 64px);
     /* min-height: fit-content; */
 }
 
 header .container img {
+    width: 132px;
+    height: 46px;
+    margin-top: 20px;
     display: none;
 }
 
@@ -61,13 +64,18 @@ nav {
     color: var(--fuchsia);
     background-color: white;
     padding: 24px 104px;
-    height: 72px;
+    height: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 3;
+}
+
+nav img {
+    width: 132px;
+    height: 46px;
 }
 
 nav svg {
@@ -145,28 +153,32 @@ a:hover {
 
 .servicos-container {
     display: flex;
-
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1200px;
 }
 
 .servico {
-    width: 32%;
+    width: 30%;
     text-align: center;
-    margin: 0 32px;
-    padding: 24px;
+    /* margin: 24px; */
+    padding: 16px;
     border: 1px solid var(--violet);
     border-radius: 1.5rem;
+    background-color: var(--light-violet);
 }
 
-.servico h2, svg {
-    color: var(--fuchsia);
+.servico h2 {
+    color: var(--violet);
 }
 
 .servico svg {
-    width: 56px;
-    height: 56px;
-    background-color: var(--light-fuchsia);
+    width: 48px;
+    height: 48px;
+    background-color: var(--violet);
     border-radius: 50%;
-    border: 8px solid var(--light-fuchsia);
+    border: 8px solid var(--violet);
+    color: #fff;
 }
 
 /* Responsivity */
@@ -181,6 +193,10 @@ a:hover {
         padding: 24px 30px;
     }
 
+    nav img {
+        display: none;
+    }
+
     .container {
         padding: 24px 30px;
     }
@@ -188,13 +204,13 @@ a:hover {
 
 /* Tablet */
 @media (max-width: 780px) {
-    body, button, input, select, textarea {
+    /* body, button, input, select, textarea {
         font-size: 12px;
-    }
+    } */
 
     header {
-        height: fit-content;
-        margin-bottom: 72px;
+        /* height: fit-content; */
+        /* margin-bottom: 72px; */
     }
 
     h1 {
@@ -217,6 +233,24 @@ a:hover {
     a {
         padding: 4px;
     }
+
+    #sobremim {
+        flex-direction: column;
+    }
+
+    #sobremim .img-container {
+        width: 100%;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+        align-items: space-between;
+    }
+
+    .servicos-container .servico {
+        width: 90%;
+        height: 30%;
+    }
 }
 
 /* Mobile */
@@ -236,13 +270,5 @@ a:hover {
 
     nav a {
         font-size: 10px;
-    }
-
-    #sobremim {
-        flex-direction: column;
-    }
-
-    #sobremim .img-container {
-        width: 100%;
     }
 }
