@@ -266,6 +266,46 @@ a:hover {
     width: 424px;
 }
 
+#contato {
+    background-color: var(--light-violet);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+}
+
+#contato p {
+    max-width: 650px;
+    text-align: center;
+}
+
+#contato button {
+    background-color: var(--fuchsia);
+    margin: 24px 0;
+}
+
+#contato .socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 16px;
+}
+
+footer {
+    background-color: var(--light-violet);
+    text-align: center;
+    padding: 0 0 40px 0;
+    color: var(--violet);
+    font-size: 0.8rem;
+}
+
+footer svg {
+    width: 16px;
+    height: 16px;
+}
+
 /* Responsivity */
 
 /* Small Desktop */
