@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     margin: 0;
     color: var(--dark-purple);
@@ -91,7 +95,7 @@ a {
 
 a:hover {
     background-color: var(--fuchsia);
-    color: white;
+    color: #fff;
 }
 
 .container {
@@ -108,8 +112,7 @@ a:hover {
 #sobremim {
     display: flex;
     min-height: fit-content;
-    padding-bottom: 80px;
-    padding-top: 40px;
+    padding: 80px 0;
     background-color: var(--light-violet);
 }
 
@@ -143,7 +146,7 @@ a:hover {
 
 #servicos {
     min-height: fit-content;
-    padding: 64px 0;
+    padding: 80px 0;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -181,7 +184,7 @@ a:hover {
 
 #portfolio {
     background-color: var(--light-violet);
-    padding: 64px 0;
+    padding: 80px 0;
 }
 
 #portfolio h1 {
@@ -227,7 +230,7 @@ a:hover {
 }
 
 #curriculo {
-    padding: 64px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -271,7 +274,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 0;
+    padding: 80px 0;
+}
+
+#contato h1 {
+    background: -webkit-linear-gradient(var(--fuchsia), var(--violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 #contato p {
@@ -293,10 +303,22 @@ a:hover {
     padding: 16px;
 }
 
+#contato .socialmedia a {
+    color: var(--fuchsia);
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#contato .socialmedia a:hover {
+    color: #fff;
+}
+
 footer {
     background-color: var(--light-violet);
     text-align: center;
-    padding: 0 0 40px 0;
+    padding: 0 0 24px 0px;
     color: var(--violet);
     font-size: 0.8rem;
 }
@@ -304,6 +326,7 @@ footer {
 footer svg {
     width: 16px;
     height: 16px;
+    color: var(--fuchsia);
 }
 
 /* Responsivity */
@@ -414,5 +437,9 @@ footer svg {
     #curriculo .curriculo-container .curriculo-info {
         min-height: 300px;
         margin-bottom: 16px;
+    }
+
+    footer {
+        padding: 0 0 72px 0px;
     }
 }
