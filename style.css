@@ -54,6 +54,7 @@ button:hover {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: calc(100vh - 64px);
 }
 
@@ -265,8 +266,8 @@ a:hover {
 #curriculo .curriculo-container .curriculo-info {
     font-size: 0.9rem;
     display: grid;
-    grid-template-columns: 104px 320px;
-    width: 424px;
+    grid-template-columns: 104px 290px;
+    width: fit-content;
 }
 
 #contato {
@@ -358,7 +359,7 @@ footer svg {
     }
 
     .container {
-        width: 100%;
+        width: 90%;
         padding: 0 24px;
     }
 
@@ -390,7 +391,7 @@ footer svg {
     }
 
     .servicos-container .servico {
-        width: 90%;
+        width: 100%;
         margin-top: 10px;
     }
 
@@ -408,11 +409,10 @@ footer svg {
 /* Mobile */
 @media (max-width: 480px) {
     nav {
-        padding: 0 16px;
         position: fixed;
-        width: 100%;
         top: unset;
         bottom: 0;
+        width: 100%;
     }
 
     nav svg {
@@ -422,6 +422,11 @@ footer svg {
 
     nav a {
         font-size: 10px;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0 auto;
     }
 
     #curriculo h1 {
